@@ -400,7 +400,7 @@ public class BluetoothService {
                     offset = 0;
                     if (bytes > 0) {
                         String received = new String(buffer, 0, bytes);
-                        if (waitingForResponse && received.contains("ok")) {
+                        if (waitingForResponse && received.contains("*")) {
                             responseReceived = true;
                         }
                         // Send the obtained bytes to the UI Activity
